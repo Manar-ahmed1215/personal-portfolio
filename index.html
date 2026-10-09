@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <input type="radio" name="filter" id="all" checked>
+    <input type="radio" name="filter" id="design">
+    <input type="radio" name="filter" id="photos">
+    <input type="checkbox" id="sidebar-toggle">
+
+    <div class="portfolio-container">
+        
+        <aside class="sidebar">
+            <div class="profile-info">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Profile" class="profile-img">
+                <h2>My Portfolio</h2>
+                <p>Front-End Developer</p>
+            </div>
+            
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="#portfolio" class="active"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About Me</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <section id="portfolio" class="section">
+                <div class="portfolio-header">
+                    <h1>My Portfolio</h1>
+                    <div class="filter-bar">
+                        <label for="all" class="filter-btn">ALL</label>
+                        <label for="design" class="filter-btn">Design</label>
+                        <label for="photos" class="filter-btn">Photos</label>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card design-item">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500" alt="Web Design">
+                        <div class="card-info">
+                            <h3>Web Design</h3>
+                            <p>Modern and responsive website design for a creative agency.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card design-item">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=500" alt="Minimal Design">
+                        <div class="card-info">
+                            <h3>Minimal Design</h3>
+                            <p>Clean and minimal layout for product landing page.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card photos-item">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500" alt="Photography">
+                        <div class="card-info">
+                            <h3>Photography</h3>
+                            <p>High quality photography portfolio for personal brand.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card design-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Mobile App">
+                        <div class="card-info">
+                            <h3>Mobile App</h3>
+                            <p>User friendly mobile application design concept.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card design-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Dashboard UI">
+                        <div class="card-info">
+                            <h3>Dashboard UI</h3>
+                            <p>Admin dashboard design with modern dashboard UI.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card photos-item">
+                        <img src="https://images.unsplash.com/photo-1542744094-3a31246263d0?w=500" alt="Branding">
+                        <div class="card-info">
+                            <h3>Branding</h3>
+                            <p>Brand identity design for startup business.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section about-section-grid">
+                <div class="about-left">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm a front-end developer passionate about building beautiful and functional websites. I love turning ideas into real products using HTML & CSS.</p>
+                    
+                    <h3 class="skills-title">My Skills</h3>
+                    <div class="skill-bar-container">
+                        <span class="skill-name">HTML</span>
+                        <div class="progress-bar"><div class="progress html-progress"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-name">CSS</span>
+                        <div class="progress-bar"><div class="progress css-progress"></div></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="progress-bar"><div class="progress js-progress"></div></div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-bar-container">
+                        <span class="skill-name">UI/UX Design</span>
+                        <div class="progress-bar"><div class="progress ui-progress"></div></div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+
+                    <a href="#" class="btn-resume"><i class="fa-solid fa-download"></i> Download Resume</a>
+                </div>
+
+                <div class="pricing-container">
+                    <h2 class="pricing-main-title">Pricing Plans</h2>
+                    <div class="pricing-grid">
+                        <div class="price-card">
+                            <i class="fa-solid fa-paper-plane price-icon"></i>
+                            <h3>Basic</h3>
+                            <div class="price">$19<span>/mo</span></div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 1 Website</li>
+                                <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+                                <li><i class="fa-solid fa-check"></i> Basic Support</li>
+                            </ul>
+                            <a href="#" class="btn-price">Sign Up</a>
+                        </div>
+                        <div class="price-card popular">
+                            <span class="badge">POPULAR</span>
+                            <i class="fa-solid fa-star price-icon"></i>
+                            <h3>Pro</h3>
+                            <div class="price">$49<span>/mo</span></div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 5 Websites</li>
+                                <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+                                <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                                <li><i class="fa-solid fa-check"></i> Source Files</li>
+                            </ul>
+                            <a href="#" class="btn-price">Sign Up</a>
+                        </div>
+                        <div class="price-card">
+                            <i class="fa-solid fa-crown price-icon"></i>
+                            <h3>Premium</h3>
+                            <div class="price">$99<span>/mo</span></div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Unlimited Websites</li>
+                                <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+                                <li><i class="fa-solid fa-check"></i> 24/7 Support</li>
+                                <li><i class="fa-solid fa-check"></i> Source Files</li>
+                            </ul>
+                            <a href="#" class="btn-price">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-cards-grid">
+                    <div class="contact-info-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>info@sample.com</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Location</h4>
+                        <p>Cairo, Egypt</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+20 123 456 7890</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-col">
+                    <h3>About Me</h3>
+                    <p>I'm a front-end developer who loves creating beautiful and functional web experiences. I focus on writing clean code and creating great user experiences.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/manarahmedashour"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Recent Blog Posts</h3>
+                    <div class="blog-post-item">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=60" alt="Blog">
+                        <div>
+                            <h4>How to build a responsive website</h4>
+                            <span>May 10, 2024</span>
+                        </div>
+                    </div>
+                    <div class="blog-post-item">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=60" alt="Blog">
+                        <div>
+                            <h4>CSS Grid Layout Guide</h4>
+                            <span>April 28, 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Popular Tags</h3>
+                    <div class="tags-cloud">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Design</span>
+                        <span>UI/UX</span>
+                        <span>Responsive</span>
+                        <span>Frontend</span>
+                        <span>Web Design</span>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright-bar">
+                <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
